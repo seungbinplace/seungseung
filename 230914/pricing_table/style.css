@@ -63,11 +63,13 @@ ul {
 }
 
 .pricing-item.recommend h2{
-    border: 1px solid hsl(230, 78%, 42%);
+   
+    color: hsl(230, 78%, 2%);
 }
 .pricing-item.recommend .btn{
     border: 1px solid hsl(230, 78%, 42%);
     color: white;
+    background-color: blue;
 }
 
 @media(min-width: 640px){
