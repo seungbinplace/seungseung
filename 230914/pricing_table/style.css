@@ -64,7 +64,7 @@ ul {
 
 .pricing-item.recommend h2{
    
-    color: hsl(230, 78%, 2%);
+    color: hsl(230, 78%, 48px);
 }
 .pricing-item.recommend .btn{
     border: 1px solid hsl(230, 78%, 42%);
