@@ -1,0 +1,27 @@
+.btn{
+    /* 1rem=16px */
+    font-size: 1rem;
+    display: inline;
+    /* display: block; */
+    padding: 10px 20px;
+    background-color: #3838fb;
+    color: hsl(133, 100%, 50%);
+    border: 1px solid rgb(228, 255, 21);
+    cursor: pointer;
+    /* 사용자에게 커서 모양을 바꿔서 보여준다 */
+    transition: all 0.2s ease;
+    /* transition은 before 상태에 배치하는것이 좋다 */
+}  
+
+
+.btn:hover{
+    background-color: red;
+    border-radius: 10px;
+}
+
+.btn:active{
+    background-color: rgb(107, 159, 105);
+    color: rgb(220, 39, 105);
+}
+
+/* 우선순위 hover>active 순서 주의 */

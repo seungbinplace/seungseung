@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Dongle:wght@300;400;700&family=Gugi&family=Pacifico&family=Single+Day&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1280px;
+    margin:0 auto;
+    padding-top: 10px;
+    /* 상하-0 좌우-auto */
+}
+
+.brand{
+    font-family: 'Pacifico', cursive;
+}
+.menu-list{
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+    /* 16px * 3 = 48px */
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.icons{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}

@@ -1,0 +1,53 @@
+
+    /*각자 줄때 (4개)*/
+    /* padding-top: 5px;
+     padding-bottom: 10px;
+     padding-left: 20px;
+     padding-right: 25px;*/
+
+     /*상하, 좌우값 한번에 줄때 (2개)*/
+     /*padding:10px 20px;*/
+     
+     /*상 좌우 하 (3개)*/
+     /*padding:10px 20px 50px;*/
+     
+     /*시계 방향 상 우 하 좌(4개)*/
+     padding: 10px 10px 10px 10px;*/
+    
+  /*  padding:10px;
+}*/
+
+table td:last-child{
+       /*수평정렬 - left, right, ceter...*/   
+  text-align:right;
+      /* 수직정렬 - top meddle bottom*/ 
+  /*vertical-align:top;}*/
+
+/*
+table{
+       border: 1px solid #222;
+       border-collapse: collapse;
+}
+table thead tr{
+      border-bottom: 1px solid #222;
+}
+
+
+table tr{
+    border-bottom:1px solid #333;
+}
+ 
+table td:first-child{
+    text-align:center;
+}
+
+table th:first-child{
+    text-align:left;
+}
+
+table tbody td{
+    border-bottom:1px solid #222;
+    border-right:1px solid #222;
+}
+*/
+/*----------------------------복습*/

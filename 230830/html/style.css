@@ -1,0 +1,6 @@
+.text-color{
+         color: hsl(0,50%,50%);
+         font-size:32px;
+         font-weight: 600;
+         background-color: yellow;
+ }

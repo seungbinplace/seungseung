@@ -1,0 +1,50 @@
+#header{
+    font-size: 16px;
+}
+
+#header>h2{
+    font-size: 2rem;
+/* 16x2=32px; */
+}
+
+.list{
+    font-size: 10px;
+}
+
+.list li{
+        font-size: 1rem;
+}
+
+.btn{
+    padding: 0.5rem 1rem;
+    background-color: rgb(112, 113, 113);
+    border: 0;
+    font-size: 1rem;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border-radius: 40px;
+    cursor:pointer;
+    transition: all 0.5s ease;
+}
+
+/* transition-property:all;
+transition-duration:200ms;
+transition-timing-funcion: ease;
+줄인 것
+1s= 1000ms 0.2s=200ms */
+
+
+.btn:hover{
+    background-color: yellow;
+    color:black;
+}
+
+.btn:active{
+    background-color: aqua;
+    color:violet
+}
+
+.btn-primary{
+    background-color: blue;
+    color: white;
+}

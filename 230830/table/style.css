@@ -1,0 +1,35 @@
+table{
+       border:1px solid #222;
+       border-collapse:collapse;
+}
+
+table tbody tr{
+      border-bottom:1px solid #222;
+}
+
+table th{
+     border-bottom:1px solid #222;
+}
+
+table tbody td{
+        border-right:1px solid #222;
+}
+
+table td{
+padding:15px;
+ vertical-align:top;}
+
+table th:first-child{
+    text-align:left;
+}
+
+table td:nth-child(2),
+table td:nth-child(5){
+        text-align:right;
+}
+
+
+
+
+
+

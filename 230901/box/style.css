@@ -1,0 +1,22 @@
+#rect{
+    width: 350px;
+    height: 150px;
+    background-color: #00fff7;
+	 border: 5px solid rgb(123, 255, 147);
+	 box-sizing: border-box;
+	 padding: 10px;
+	 overflow: hidden;
+	 margin-bottom: 20px;
+	 margin-left:10px;;
+}
+.box{
+    width: 150px;
+	 height: 150px;
+	 background-color:red;
+	 /* border: 20px solid transparent; */
+	 border: 20px solid blueviolet;
+	 box-sizing: border-box;
+	 padding: 10px;
+	 overflow:hidden;
+	 margin-top: 20px;
+}

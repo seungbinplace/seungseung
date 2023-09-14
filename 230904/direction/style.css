@@ -1,0 +1,53 @@
+*{
+    padding:0;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    background-color: rgb(252, 223, 184);
+    height: 100vh;
+    align-items: flex-start;
+
+    flex-direction: row;
+    /* flex 주축의 방향은 기본 값이 row */
+    flex-direction: row-reverse;
+    /* row-reverse는 주축의 진행방향을 역순 */
+
+    flex-direction: column;
+    /* column은 주축의 진행방향을 교차축으로 바꾼다
+    가로가 세로로 간다 */
+
+    align-items: center;
+    flex-direction: column-reverse;
+}
+
+.box{
+    color:rgb(255, 255, 255);
+    background-color: #ec1e1e;
+    flex-grow: 1;
+    flex-basis: calc(100%/3);
+}
+
+.box:nth-child(2){
+    background-color: rgb(245, 145, 38);
+}
+
+.box:nth-child(3){
+    background-color: rgb(207, 220, 20);
+}
+
+.box:nth-child(4){
+    background-color: rgb(28, 184, 11);
+}
+
+.box:nth-child(5){
+    background-color: rgb(57, 102, 236);
+}
+
+.box:nth-child(6){
+    background-color: rgb(239, 61, 182);
+}

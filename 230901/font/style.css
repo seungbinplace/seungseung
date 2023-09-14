@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Gugi&family=Single+Day&display=swap');
+
+@font-face {
+    font-family: 'iceSimin-Rg';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/iceSimin-Rg.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DOSPilgiMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/DOSPilgiMedium.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GoryeongStrawberry';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/GoryeongStrawberry.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.title{
+    font-family: 'Gugi', cursive;
+    font-size: 2rem;
+    /* 글자의 두께 조절 */
+    font-weight: 600;
+    /* 글자를 꾸밈 */
+    /* text-decoration: line-through; */
+    letter-spacing: -0.05px; 
+    /* 자간조절 */
+    line-height:1.5;
+    /* 행간조절 */
+    /* line-height: 150%; 위에랑 같은 뜻 */
+    white-space: nowrap;
+    /* 줄바꿈 없이 가로 한줄로 나열됨 */
+}
+
+.giants{
+    font-family: 'iceSimin-Rg';
+}
+
+.good{
+    font-family: 'DOSPilgiMedium';
+}
+
+.very{
+    font-family: 'GoryeongStrawberry';
+}

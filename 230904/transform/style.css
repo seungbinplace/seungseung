@@ -1,0 +1,86 @@
+.box{
+    display:inline-block;
+    /* inline,block의 성격을 모두 가진 속성
+    inline 요소에 width,height 값을 적용할 때 활용 */
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    background-color: darksalmon;
+}
+
+#first{
+    background-color: aqua;
+    transform: rotate(0deg);
+    /* deg=degree, 각도 */
+    transition: all 1s ease;
+    /* transition:margin-left 1s ease; */
+    /* transform-origin:right-bottom; */
+}
+
+#first:hover{
+    transform: rotate(360deg);
+}
+
+#second{
+    background-color: rgb(124, 227, 105);
+    transition: transform 1s ease;
+}
+/* transform은 다른 요소에 영향을 주지 않고
+혼자서 변형된다 */
+#second:hover{
+    transform:scale(2)
+}
+
+#third
+    {background-color: rgb(248, 124, 186);
+    /* transform:skew(30deg,30deg); */
+    /* trasform::skewX(45deg);*/
+    /* transform: skewY(45deg); */
+    transition:transform 1s ease;
+}
+    /* X,Y 방향으로 기울일 수 있음 */
+
+#third:hover{
+    transform: skewX(40deg);
+    transform: skewY(45deg);
+}
+
+#t1{
+    transform: translateX(0%);
+    /* x축 이동 */
+    transition: all 1s 1s cubic-bezier(1, 0.02, 0.45,-0.59);
+}
+
+#t1:hover{
+    transform: translateX(100%);
+}
+
+#t2{
+    /* transform: translatey(-50px); */
+    /* y축 이동 */
+    transform: translateX(0%);
+    transition: all 1s cubic-bezier(1,-0.36, 0, 1.43);
+}
+
+#t2:hover{
+    transform: translateX(100%);
+}
+
+#t3{
+    /* transform: translate(100px,150px); */
+    /* transform: translatey(x값,y값) */
+    
+    transition: all 2s 1s cubic-bezier(0, 1.15, 1,-0.1);
+    transform: translateX(0%);
+    /* transform: translate3d(100px,0,0); */
+    
+    /* 퍼포먼스 개선을 위해 transform3d 활용하는 경우가 있음 */
+    
+    /* 주의할점:animation/transform을 과하게 많이 쓰면,
+    브라우저가 해야할 일이 많아져, 화면이 버벅거리는 원인이
+    될 수 있다 */
+}
+
+#t3:hover{
+    transform: translateX(100%);
+}

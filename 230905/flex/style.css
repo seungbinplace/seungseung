@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex{
+    background-color: antiquewhite;
+    display: flex;
+    width: 100%;
+    max-width: 600px;
+    /* margin-left: auto;
+    margin-right: auto; */
+
+    /* 중앙정렬 축약형 */
+    margin:0 auto;
+    justify-content: flex-end;
+    /* flex-direction: row-reverse; */
+    justify-content: space-between;
+    /* 자식요소를 균등하게 배치할 때 자주 쓰이는 속성 */
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex > div{
+    flex-basis: calc(100%/5);
+}
+
+.container{
+    display: flex;
+    width:100%;
+    max-width: 600px;
+    height: 400px;
+    background-color: rgb(248, 250, 179);
+    margin: 0 auto;
+    flex-wrap: wrap;
+    /* align-items:flex-end */
+
+    /* aligncontent는 여러줄일때만 작동 */
+    /* align-content: center; */
+}
+
+.container>div{
+    flex-basis: calc(100%/5);
+    /* flex-grow:1; */
+}
+
+.container>div:first-child{
+    /* flex-grow:2; */
+    flex-basis: 40%;
+}
+
+.container>div:nth-child(7){
+    /* flex-grow:3; */
+    flex-basis: 60%;
+}
+
+/* 쉼표(,)가 아닌 슬래쉬(/) 잘보기 */
+
+/* 4번째부터 글자색 바꾸기 */
+.container> div:nth-child(n+4){
+    color:white
+}
+
+.container > div:nth-child(1),
+.flex > div:nth-child(1){
+    background-color: hsl(240, 100%, 100%);
+}
+
+.container > div:nth-child(2),
+.flex > div:nth-child(2){
+    background-color: hsl(240, 100%, 90%);
+}
+
+.container > div:nth-child(3),
+.flex > div:nth-child(3){
+    background-color: hsl(240, 100%, 80%);
+}
+
+.container > div:nth-child(4),
+.flex > div:nth-child(4){
+    background-color: hsl(240, 100%, 70%);
+}
+
+.container > div:nth-child(5),
+.flex > div:nth-child(5){
+    background-color: hsl(240, 100%, 60%);
+}
+
+.container > div:nth-child(6),
+.flex > div:nth-child(6){
+    background-color: hsl(240, 100%, 50%);
+}
+
+.container > div:nth-child(7),
+.flex > div:nth-child(7){
+    background-color: hsl(240, 100%, 40%);
+}
+
+.container > div:nth-child(8),
+.flex > div:nth-child(8){
+    background-color: hsl(240, 100%,30%);
+}
+
+.container > div:nth-child(9),
+.flex > div:nth-child(9){
+    background-color: hsl(240, 100%,20%);
+}

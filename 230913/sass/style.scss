@@ -1,0 +1,11 @@
+// import 순서도 중요
+
+$bg : blue;
+@import "card.scss";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+

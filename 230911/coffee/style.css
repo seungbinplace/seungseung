@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    transition: all 1s ease;
+    filter:  blur(5px) grayscale(50%);
+    transition: all 1s ease;
+    transform: rotate(360deg);
+    border-radius: 50%;
+    /* transform:translateX(0%); */
+    
+}
+
+img:hover{
+    filter: grayscale(0%) blur(0);
+    transform: rotate(0deg);
+    /* transform: translateX(50%); */
+}
+
+.container{
+    display: flex;
+    margin: 20px auto;
+    width: 1200px;
+    gap: 20px;
+}
+
+.item .contec{
+    position: relative;
+}
+
+
+
+.badge{
+    border: 1px solid transparent;
+    color: white;
+    background-color: blue;
+    border-radius: 50%;
+    padding: 12px 5px;
+    position: absolute;
+    bottom: 20px;
+    left: 15px;
+}
+
+.text{
+    display: flex;
+    justify-content: center;
+    font-weight: 800;
+    margin-top: 15px;
+}
+

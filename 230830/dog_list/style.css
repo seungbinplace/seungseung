@@ -1,0 +1,78 @@
+/*-------------
+지정 속성 적용 -참고
+ul li:nth-child(1),
+ul li:nth-child(4),
+ul li:nth-child(2){
+      background-color: pink;
+      color: yellow;
+}
+---------------*/
+
+ol li:nth-child(2n-1){
+   background-color: yellow;
+   color:blue;
+}
+
+ol li:nth-child(2n){
+    background-colr:pink;
+    color:green;
+}
+
+ol li:nth-child(1){
+                background-color:black;
+}
+
+ol li:first-child{
+                background-color:yellow;
+}
+
+ol li:last-child{
+                background-color:green;
+}
+
+ul{
+   /*border-width: 10px;*/
+   /*border-style: solid;*/
+   /*border-style:dashed;*/
+  /* border-style:dotted;*/
+   /*border-color: black;*/
+
+    border: 10px dotted pink ;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+/*   border 테두리*/
+     /*radius 테두리 곡선*/
+
+/* 홀수번째를 쓸때는 odd*/
+/* 짝수번째를 쓸때는 even*/
+
+ul li:nth-child(even){
+           background-color: blue;
+            color:yellow;
+}
+ul li:nth-child(odd){
+           background-color: pink;
+           color:yellow;
+}
+
+ol{
+   /*border-radius:20px;* 공통된 값*/
+      
+      border-top:10px solid red;
+      border-bottom:10px solid yellow;
+      border-left:10px solid pink;
+      border-right:10px solid green;
+       
+
+       border-top-left-radius:20px;
+       border-top-right-radius: 20px;
+       border-bottom-left-radius: 20px; 
+       border-bottom-right-radius:20px;
+
+  /*각 영역에 대한 값*/
+
+/*넘치는 값 가리기*/   
+ overflow: hidden;
+}

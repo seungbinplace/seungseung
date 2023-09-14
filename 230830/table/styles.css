@@ -1,0 +1,26 @@
+table{
+       border: 1px solid #222;
+       border-collapse: collapse;
+}
+
+table thead tr th{
+        border-bottom: 1px solid #222;
+        border-right:1px solid #222;
+        background-color:gray;
+}
+
+
+table tbody td{
+    border-bottom:1px solid #222;
+    border-right:1px solid #222;
+}
+
+
+
+table tbody td{
+     text-align:right;
+}
+
+
+    
+

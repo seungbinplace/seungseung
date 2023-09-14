@@ -1,0 +1,50 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Dongle:wght@300;400;700&family=Gugi&family=Single+Day&display=swap" rel="stylesheet">
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style:none;
+    margin: 0;
+    padding:0;
+    overflow:hidden;
+}
+
+.container{
+    display: table;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #ddd; */
+    flex-wrap: wrap
+    padding: 8px 12px;
+    max-width: 1280px;
+
+}
+
+.logo{
+    display: flex;
+    font-family: 'Single Day', cursive;
+    font-weight: 24px;
+    font-size: 24px;
+}
+
+.list{
+    display:flex;
+    justify-content: space-between;
+    text-align:center;
+}
+
+.list ui li{
+    display: block;
+    padding-left: 5px;
+    padding-right: 130px;
+    float: left;
+    width: 780px;
+    padding: 20px;
+}

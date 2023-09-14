@@ -1,0 +1,21 @@
+.back{
+       background:pink;
+}
+
+.blue{
+       color:red;
+       background:yellow;
+}
+
+.green{
+       color: gray;
+       font-size: 30px;
+       background:color:hsl(229, 73%, 70%);     
+}
+
+.fm{
+      color:rgb(227, 27, 194);
+      
+      font-size: 24px;
+      font-weight: bold;
+}
