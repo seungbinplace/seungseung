@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.container{
+    display: flex;
+    /* aspect-ratio: 25%; */
+}
+
+.contant{
+    display: flex;
+    flex-basis: 50%;
+    background-color: #ddd;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5%;
+    height: 100vh;
+}
+
+
+.container.reverse{
+    flex-direction: row-reverse;
+    text-align: end;
+}
+
+.container.reverse h1{
+    margin-right: 15%;
+}
+
+figure{
+    flex-basis: 50%;
+    height: 100vh;
+
+}
+
+.contant p{
+    width: 40ch;
+}
+
