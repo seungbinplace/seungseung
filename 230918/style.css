@@ -1,0 +1,16 @@
+#title{
+    color: blue !important;
+}
+
+#bar{
+    background-color: rgba(100, 101, 103, 0.461);
+    height: 50px;
+    width: 100%;
+}
+
+#graph{
+    width: 50%;
+    height: 100%;
+    background-color: red;
+    transition: all 1s ease;
+}
