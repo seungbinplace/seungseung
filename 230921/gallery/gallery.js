@@ -14,6 +14,9 @@ const title = document.getElementById('title')
 console.log(title)
 
 
+
+
+
 for(let i =0; i < date.length; i++){
 console.log(date[i])
     // 반복해서 li요소에 title 값을 담아줌
@@ -25,7 +28,14 @@ console.log(buttons)
 
 // .button 클래스를 가진 요소들을 모두 가져옴
 for(let i = 0; i < buttons.length; i++){
-    console.log(buttons[i])
+    // console.log(buttons[i])
+
+// 초기화
+// 첫번째 버튼에 check 클래스 추가
+    buttons[0].classList.add('check')
+// 첫번째 데이터 타이틀을 figcaption에 할당
+    title.textContent=date[0].title
+  
 
     buttons[i].addEventListener('click',()=>{
         console.log(date[i].url)
