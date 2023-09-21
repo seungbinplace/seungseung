@@ -33,5 +33,13 @@ for(let i = 0; i < buttons.length; i++){
     image.src = date[i].url
         // title의 값에 data[i].title
         title.textContent =  date[i].title
+        buttons[i].classList.add('check')
+
+        // 모든 버튼에서 check 클래스 제거
+        for(let j = 0; j < buttons.length; j++){
+            buttons[j].classList.remove('check')
+        }
+        // 클릭한 버튼에 check 클래스 추가
+        buttons[i].classList.add('check')
     })
 }
