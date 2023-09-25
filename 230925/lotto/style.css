@@ -1,0 +1,32 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#result{
+    display: flex;
+    gap: 10px;
+   
+}
+
+li{
+    background-color: blue;
+    padding: 50px;
+    border-radius: 50%;
+    color: white;
+    list-style: none;
+}
+
+#generate{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#generate.processing{
+    pointer-events: none;
+    cursor: not-allowed;
+    background-color: #bbbbbb;
+}
+
