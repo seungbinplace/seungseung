@@ -5,19 +5,30 @@ console.log(dataList)
 
 // html: data-counter, js: dataset.counter
 
-for(let i =0; i < dataList.length; i++){
-    const target = dataList[i].dataset.counter
-    const timerText = dataList[i].querySelector('.timer')
-    const step = Math.floor(target / 200)
-    console.log(step)
-        let index = 0;
-        setInterval(() => {
-            if(target >= index){
+// for(let i =0; i < dataList.length; i++){
+//     const target = dataList[i].dataset.counter
+//     const timerText = dataList[i].querySelector('.timer')
+//     const step = Math.floor(target / 200)
+//     console.log(step)
+//         let index = 0;
+//         setInterval(() => {
+//             if(target >= index){
                 
-                timerText.textContent= index
-                index = index + step
-                // console.log(index)
-            } 
-            }, 0.001)
+//                 timerText.textContent= index
+//                 index = index + step
+//                 // console.log(index)
+//             } 
+//             }, 0.001)
+// }
 
-}
+dataList.forEach(item => {
+    let index = 0;
+    const target = item.dataset.counter
+    const timerText = item.querySelector('.timer')
+    const step = Math.floor(target/200)
+
+    setInterval(() => {
+if(target >= index){
+    index = index + step 
+    timerText.textContent= index}
+}, 0.001)})
