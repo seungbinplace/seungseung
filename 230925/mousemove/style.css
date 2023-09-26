@@ -32,6 +32,7 @@ body{background-image: url(https://images.pexels.com/photos/7206502/pexels-photo
 }
 
 .dot{
+    transition: all 10000ms linear;
     width: var(--size);
     height: var(--size);
     border-radius: var(--size);
