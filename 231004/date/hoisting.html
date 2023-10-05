@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   let a = 10; // 전역변수 a선언
+      //   if (true) {
+      //     console.log(a); // ReferenceError: a is not defined
+      //     let a = 20; // 지역변수 a 선언
+      //   }
+
+      console.log(logMessage());
+      console.log(typeof logMessage);
+      //   sumNumbers();
+
+      function logMessage() {
+        return "worked";
+      }
+
+      var sumNumbers = function () {
+        return 10 + 20;
+      };
+    </script>
+  </body>
+</html>

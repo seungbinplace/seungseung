@@ -5,6 +5,7 @@
 
 .swiper-slide.first{
     background-color: darkcyan;
+    background-image: url('https://images.pexels.com/photos/14300518/pexels-photo-14300518.jpeg?auto=compress&cs=tinysrgb&w=300');
 }
 
 .swiper-slide.second{
@@ -16,6 +17,11 @@
 
 .swiper-slide.third{
     background-color: pink;
+    background-image: url("https://images.pexels.com/photos/18500689/pexels-photo-18500689.jpeg?auto=compress&cs=tinysrgb&w=300")
+}
+
+.swiper-slide{
+    background-image: url("https://images.pexels.com/photos/14331315/pexels-photo-14331315.jpeg?auto=compress&cs=tinysrgb&w=300");
 }
 
 .swiper-pagination-bullet{
@@ -38,3 +44,8 @@ body{
       height: 100%;
    
 } */
+.swiper-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

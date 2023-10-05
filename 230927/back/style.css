@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+    width: 50%;
+    height: 100%;
+    aspect-ratio: 9/16;
+    object-fit: cover;
+    display: block;
+    border-radius: 30px;
+}
+
+.container{
+   margin: 2rem;
+}
+
+h1{
+    margin-bottom: 2rem;
+    font-size: 27px;
+    margin-left: 3px;
+}
+
+
+.content{
+    display: flex;
+
+}
