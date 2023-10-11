@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        margin: 20px;
+        float: left;
+      }
+      table,
+      th {
+        border-collapse: collapse;
+        border: solid 1px #222;
+      }
+
+      th {
+        background-color: rgb(100, 184, 252);
+        background-color: #eee;
+      }
+
+      th,
+      td {
+        padding: 10px 15px;
+      }
+
+      td {
+        border: solid 1px #222;
+      }
+    </style>
+  </head>
+  <body></body>
+  <script>
+    for (let k = 1; k <= 9; k++) {
+      document.write("<table><tr><th>" + k + "단</th></tr>");
+      //   document.write("<tr>");
+      //   document.write("<th>" + k + "단</th>");
+      //   document.write("</tr>");
+      for (let i = 1; i <= 9; i++) {
+        // document.write("<tr><td>");
+        // document.write("<td>");
+        document.write("<tr><td>" + k + "X" + i + "=" + k * i + "</td></tr>");
+        // document.write("</td></tr>");
+        // document.write("</tr>");
+      }
+      document.write("</table>");
+      //   document.write("<hr>");
+    }
+  </script>
+</html>
