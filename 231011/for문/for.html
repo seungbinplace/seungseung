@@ -19,11 +19,16 @@
       //   }
       // }
       let sum = 0;
-      var plus = 1;
+      let str = "";
       for (let i = 1; i <= 5; i++) {
-        //   sum = sum+i;
+        // sum = sum + i;
         sum += i;
-        document.write(sum);
+        if (i == 1) {
+          str += i;
+        } else {
+          str += "+" + i;
+          document.write(str + "=" + sum + "</br>");
+        }
       }
     </script>
   </body>

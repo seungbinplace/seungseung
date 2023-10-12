@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 1부터 100까지 출력
+      for (let i = 1; i <= 100; i++) {
+        document.write(i + "&nbsp");
+      }
+      document.write("<hr>");
+      //   10부터 1까지 출력
+      for (let i = 10; i > 0; i--) {
+        document.write(i + "&nbsp");
+      }
+
+      document.write("<hr>");
+
+      //   0부터 10까지의 짝수만 출력
+      for (let i = 0; i <= 10; i += 2) {
+        // if(i % 2 == 0)
+        document.write(i + "&nbsp");
+      }
+
+      document.write("<hr>");
+
+      //   1부터  100까지 짝수의 합
+      let sum = 0;
+      for (let i = 0; i <= 100; i += 2) {
+        sum += i;
+      }
+      document.write(sum);
+
+      document.write("<hr>");
+
+      //별찍기
+
+      // 직각사각형
+      for (let i = 0; i < 5; i++) {
+        for (let j = 0; j < 5; j++) {
+          document.write("*");
+        }
+        document.write("<br/>");
+      }
+      document.write("<hr>");
+
+      // 직각 삼각형
+      for (let i = 0; i < 5; i++) {
+        for (let j = 0; j < i + 1; j++) {
+          document.write("*");
+        }
+        document.write("<br/>");
+      }
+
+      document.write("<hr>");
+
+      // 오른쪽 직각삼각형
+      for (let i = 1; i <= 5; i++) {
+        for (let j = 5; j > i; j--) {
+          document.write("&nbsp");
+        }
+
+        for (let k = 0; k < i; k++) {
+          document.write("*");
+        }
+        document.write("<br>");
+      }
+      document.write("<hr>");
+
+      // 역 직각 삼각형
+      for (let i = 0; i < 5; i++) {
+        for (let j = 5; j > i; j--) {
+          document.write("*");
+        }
+        document.write("<br/>");
+      }
+      document.write("<hr>");
+
+      // 역 직각 삼각형 오른쪽
+      for (let i = 0; i < 5; i++) {
+        for (let j = 0; j < i; j++) {
+          document.write("&nbsp");
+        }
+
+        for (let k = 5; k > i; k--) {
+          document.write("*");
+        }
+
+        document.write("<br>");
+      }
+      document.write("<hr>");
+
+      for (let i = 1; i < 10; i += 2) {
+        for (let j = 9; j > i / 2; j--) {
+          document.write("&nbsp");
+        }
+
+        for (let k = 1; k <= i; k++) {
+          document.write("*");
+        }
+        document.write("<br>");
+      }
+      document.write("<hr>");
+
+      for (let i = 9; i > 0; i -= 2) {
+        for (let j = 1; j > i; j++) {
+          document.write("&nbsp");
+        }
+      }
+
+      //     for (let k = 9; k < i; k--) {
+      //       document.write("*");
+      //     }
+      //     document.write("<br>");
+      //   }
+      //   document.write("<hr>");
+    </script>
+  </body>
+</html>
