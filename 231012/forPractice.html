@@ -93,30 +93,91 @@
       }
       document.write("<hr>");
 
-      for (let i = 1; i < 10; i += 2) {
-        for (let j = 9; j > i / 2; j--) {
-          document.write("&nbsp");
-        }
+      // 정삼각형 위쪽
+      // for (let i = 1; i < 10; i += 2) {
+      //   for (let j = 9; j > i / 2; j--) {
+      //     document.write("&nbsp");
+      //   }
 
-        for (let k = 1; k <= i; k++) {
+      //   for (let k = 1; k <= i; k++) {
+      //     document.write("*");
+      //   }
+      //   document.write("<br>");
+      // }
+      // document.write("<hr>");
+      for (let i = 0; i < 5; i++) {
+        for (let j = 4; j > i; j--) {
+          document.write("&nbsp;");
+        }
+        // for (let k = 0; k <= i; k++) {
+        //   document.write("*");
+        // }
+        // for (let z = 1; z <= i; z++) {
+        //   document.write("*");
+        // }
+        for (let k = 0; k <= i * 2; k++) {
           document.write("*");
         }
-        document.write("<br>");
+        document.write("<br/>");
       }
-      document.write("<hr>");
+      document.write("<hr/>");
 
-      for (let i = 9; i > 0; i -= 2) {
-        for (let j = 1; j > i; j++) {
-          document.write("&nbsp");
+      // 정삼각형 아래쪽
+      for (let i = 0; i < 5; i++) {
+        for (let j = 0; j < i; j++) {
+          document.write("&nbsp;");
         }
+        // for (let k = 5; k > i; k--) {
+        //   document.write("*");
+        // }
+        // for (let z = 4; z > i; z--) {
+        //   document.write("*");
+        // }
+        for (let k = 8; k >= i * 2; k--) {
+          document.write("*");
+        }
+        document.write("<br/>");
       }
+      document.write("<hr/>");
 
-      //     for (let k = 9; k < i; k--) {
-      //       document.write("*");
-      //     }
-      //     document.write("<br>");
-      //   }
-      //   document.write("<hr>");
+      // 마름모
+      for (let i = 0; i < 5; i++) {
+        for (let j = 4; j > i; j--) {
+          document.write("&nbsp;");
+        }
+        for (let k = 0; k <= i * 2; k++) {
+          document.write("*");
+        }
+        document.write("<br/>");
+      }
+      for (let i = 0; i < 5; i++) {
+        for (let j = 0; j <= i; j++) {
+          document.write("&nbsp;");
+        }
+
+        for (let k = 6; k >= i * 2; k--) {
+          document.write("*");
+        }
+        document.write("<br/>");
+      }
+      document.write("<hr/>");
+
+      document.write("repeat 함수 이용", "<br/>");
+      // 문자열.repeat(반복횟수);
+      // document.write("*".repeat(5));
+      for (let i = 1; i <= 5; i++) {
+        // 4321 => 5-i
+        // 13579 => 2*j-1
+
+        document.write("&nbsp;".repeat(5 - i) + "*".repeat(2 * i - 1)) +
+          "<br/>";
+      }
+      for (let j = 4; j >= 1; j--) {
+        document.write("&nbsp;".repeat(5 - j) + "*".repeat(2 * j - 1)) +
+          "<br/>";
+        // 1234 => 5-j
+        // 7531 => 2*j-1
+      }
     </script>
   </body>
 </html>
