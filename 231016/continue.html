@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var msg = "";
+      for (var i = 0; i < 10; i++) {
+        msg += i + "<br>";
+        if (i == 3) {
+          continue;
+        }
+      }
+      document.write(msg);
+      document.write("<hr>");
+
+      //
+      //   무한루프
+      let j = 0;
+      while (true) {
+        document.write(j + "<br>");
+        j++;
+        if (j == 5) {
+          //   continue;
+          break;
+        }
+      }
+      document.write("<hr>");
+      // 예제 다음으로
+      let sum = 0;
+      for (let k = 1; k < 201; k++) {
+        sum += k;
+        if (k == 2) {
+          continue;
+          document.write(sum + "<br>");
+        }
+      }
+    </script>
+  </body>
+</html>
