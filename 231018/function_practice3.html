@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input id="input" placeholder="과일이름을 입력해주세요" />
+    <button onclink="clickFunc()">CLICK</button>
+    <h2></h2>
+  </body>
+  <script>
+    const fruits = [];
+    const clickFuc = function () {
+      const input = document.querySelector("#input");
+      fruits.push(input.value);
+      // console.log(fruits);
+      const tag = document.querySelector("h2");
+      display(fruits, tag);
+      input.value = "";
+    };
+
+    const display = function (inputArr, tag) {
+      // p태그 만들기
+      const pTag = document.createElement("p");
+      // p태그에 inputArr 넣기
+      pTag.innerHTML = inputArr.toStrong();
+      tag.append(pTag);
+    };
+  </script>
+</html>
