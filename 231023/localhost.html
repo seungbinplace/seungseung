@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .host {
+        border: 1px solid RGB(182, 182, 182);
+        width: 350px;
+        margin: 10px;
+        height: 200px;
+        overflow: scroll;
+      }
+
+      .box {
+        width: 500px;
+      }
+
+      input {
+        width: 200px;
+        text-align: right;
+        margin-left: 5rem;
+      }
+
+      .contant {
+        padding: 10px;
+      }
+
+      .btns {
+        margin: 10px;
+      }
+
+      .btn {
+        padding: 0px 60px;
+      }
+
+      .sung {
+        display: flex;
+      }
+
+      .dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        margin: 0px 70px;
+        background-color: hsb(0, 0, 0.9137254901960784);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="host">
+      <div class="contant">
+        <p>회원정보입력</p>
+        <div class="box">
+          <p>
+            아이디
+            <input type="text" />
+            <button>중복검사</button>
+          </p>
+          <p>패스워드<input type="text" /></p>
+
+          <p>패스워드 확인<input type="text" /></p>
+
+          <p>이름<input type="text" /></p>
+
+          <p>휴대폰 번호<input type="text" /></p>
+
+          <p>이메일<input type="text" /></p>
+
+          <p>생일 <input type="date" /></p>
+
+          <p>홈페이지<input type="text" /></p>
+        </div>
+        <div class="sung">
+          <button class="dot"></button>
+          <p>남성</p>
+        </div>
+        <div class="sung">
+          <button class="dot"></button>
+          <p>여성</p>
+        </div>
+      </div>
+    </div>
+    <div class="btns">
+      <button class="btn">제출</button>
+      <button class="btn">초기화</button>
+    </div>
+  </body>
+</html>
