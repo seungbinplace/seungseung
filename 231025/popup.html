@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>popup</title>
+  </head>
+  <body>
+    <input type="button" value="구글창 열기" onclick="openPopup();" />
+  </body>
+  <script>
+    function openPopup() {
+      // scrllbars = no, resizable = no 는 IE에서만 적용 가능
+      const child = open("string.html", "_blank", "width=1000,height=500");
+      console.log(child);
+      child.close();
+    }
+
+    function closeChild() {
+      child.close();
+    }
+  </script>
+</html>
