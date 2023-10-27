@@ -131,6 +131,12 @@ header container {
   left: 30px;
   overflow: hidden;
   height: 55px;
+  transition: all 0.3s;
+}
+
+#lnb:hover {
+  height: 180px;
+  border-bottom: 1px solid #ccc;
 }
 
 .main {
@@ -177,3 +183,29 @@ sub {
   border-bottom: 1px solid #cccccc;
   background-color: #fefefe;
 }
+
+footer {
+  background-color: #0066cc;
+  color: white;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  text-align: right;
+  margin-top: 60px;
+}
+
+footer a {
+  color: white;
+}
+
+/* #slider img {
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%);
+  display: none;
+}
+
+#slider img:first-of-type {
+  display: block;
+} */
