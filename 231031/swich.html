@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #back {
+        background-color: grey;
+        width: 500px;
+        height: 500px;
+        border-radius: 50%;
+        position: relative;
+        margin: 0 auto;
+        margin-top: 100px;
+      }
+
+      #black {
+        border: 15px solid black;
+        width: 380px;
+        height: 380px;
+        border-radius: 50%;
+        position: absolute;
+        left: 10%;
+        bottom: 9%;
+        translate: (-50%, -50%);
+      }
+
+      #image {
+        position: absolute;
+        left: 12%;
+        bottom: 10%;
+        filter: blur();
+      }
+    </style>
+  </head>
+  <body>
+    <div id="back">
+      <div id="black">
+        <img
+          id="image"
+          src="img/jun.png"
+          width="300"
+          height="300"
+          onclick="changeImage()"
+        />
+      </div>
+    </div>
+  </body>
+  <script>
+    function changeImage() {
+      document.getElementById("image").src = "img/jn.png";
+    }
+  </script>
+</html>

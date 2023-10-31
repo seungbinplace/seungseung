@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #rg {
+        width: 60%;
+        height: 100px;
+        overflow: scroll;
+      }
+    </style>
+  </head>
+  <body>
+    <span>이름 : <input type="text" /></span>
+    <p>
+      성별:
+      <input
+        type="radio"
+        value="male"
+        id="male"
+        name="gender"
+        class="changeTest"
+      />남 <input type="radio" name="" id="" />여
+    </p>
+    <p>
+      취미: <input type="checkbox" />여행 <input type="checkbox" />독서
+      <input type="checkbox" />영화감상 <input type="checkbox" />바둑
+      <input type="checkbox" />장기 <input type="checkbox" />등산
+      <input type="checkbox" />낚시
+    </p>
+    <p><button>결과출력</button></p>
+    <input type="text" id="rg" />
+  </body>
+</html>
