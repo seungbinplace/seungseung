@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    /* body * {
+      border: 2px solid blue;
+      padding: 3px;
+    } */
+    form {
+      background-color: green;
+      position: relative;
+      width: 400px;
+      height: 400px;
+      text-align: center;
+      cursor: pointer;
+      color: white;
+      left: 250px;
+    }
+    div {
+      background-color: blue;
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      top: 50px;
+      left: 50px;
+    }
+    p {
+      background-color: red;
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      top: 50px;
+      left: 50px;
+      margin: 0;
+    }
+  </style>
+  <body>
+    <!-- <div onclick="alert('div에 할당한 핸들러!')">
+      <em
+        ><code>EM</code>을 클릭했는데도 <code>div</code>에 할당한 이벤트가
+        동작합니다.</em
+    </div>> -->
+    <!-- <br /><br /><br /><br /><br /><br /><br />
+    <form >
+      FORM 
+      <div>
+        DIV
+        <p>P</p>
+      </div>
+    </form> -->
+
+    <button>버튼클릭</button>
+  </body>
+  <script>
+    <button onclick="event.stopPropagation()"> 클릭해주세요</button>;
+    // const form = document.forms[0];
+    // furm.onclick = function (e){
+    //     console.log(`target : ${e.target}m this " $ {this.tagetName}`);
+    // }
+
+    const btn = document.querySelector("button");
+    btn.addEventListener("click", function (event) {
+      alert("버튼클릭");
+    });
+  </script>
+</html>

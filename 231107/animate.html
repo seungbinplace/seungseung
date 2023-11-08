@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="../resources/js/jquery-3.6.4.js"></script>
+  </head>
+  </style>
+  <body>
+    <div id="div"
+    style="background-color: yellow; 
+    width: 200px;
+    height: 200px;
+    position: absolute;">
+  </div>
+  </body>
+  <script>
+    $("#div").on("click",function(){
+      // $("div").animate({left:"250px"})
+      $("#div").animate({
+        left:"250px",
+        opacity:"0.5",
+        height:"300px",
+        width:"300px",
+      })
+    });
+    $("#div").animate({height:"250px",opacity:"0.5"}),
+    $("div").animate({width:"250px"})
+  </script>
+</html>

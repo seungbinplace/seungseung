@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="../resources/js/jquery-3.6.4.js"></script>
+    <style>
+      div {
+        border: 2px solid blue;
+      }
+      img {
+        width: 200px;
+        height: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <img src="../resources/img/1.jpg" alt="" />
+      <img src="../resources/img/2.jpg" alt="" />
+      <img src="../resources/img/6.jpg" alt="" />
+      <img src="../resources/img/4.png" alt="" />
+      <img src="../resources/img/7.jpg" alt="" />
+      <br />
+      <button onclick="chaggeTitle()">눌러보세요</button>
+    </div>
+    <script>
+      function changeTitle() {
+        // 1. img 태그 전체 요소를 가져온다.
+        const imgTags = $("img");
+
+        // 2. 전체 태그에 대한 반복문을 실행
+        imgTags.each((i, el) => {
+          // $(el).attr("title,el.attr("src"))
+          const srcVal = $(el).attr("src");
+          $(el).attr("title", srcVal);
+        });
+      }
+    </script>
+  </body>
+</html>
