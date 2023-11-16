@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Pretendard;
+  word-break: keep-all;
+}
+
+body {
+  background-color: #000;
+  /* background-image: url("https://web-images.pixpa.com/euBpfD3-bY_D7Fw9o0HjFleXKidxIqipmwhfS9Vr8cY/rs:fit:1200:0/q:80/czM6Ly9waXhwYS5jb20vL2NvbS9hcnRpY2xlcy8xNTI4MTg5NDY4LTk4ODA2Ny1zdW5zZXQtMzQzNDkxMS0xMjgwanBnLmpwZw==");
+  backdrop-filter: blur(100);
+  background-size: cover;
+  object-fit: cover; */
+  margin: 0;
+  color: #fff;
+  font-size: 16px;
+}
+
+.progress-bar {
+  height: 6px;
+  background: #4d4d54;
+}
+
+.progress {
+  background-color: #7000ff;
+  width: 70%;
+  height: 100%;
+}
+
+.player-main {
+  background-color: rgba(48, 48, 55, 0.7);
+  display: flex;
+  align-items: center;
+  padding: 16px 40px;
+  justify-content: space-between;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.current {
+  border-radius: 14px;
+}
+
+.title {
+  color: #d9d9d9;
+}
+
+.artist {
+  color: #8c8993;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.time {
+  color: #8c8993;
+  /* padding-left: 90px; */
+  text-align: right;
+}
+
+.info,
+.time {
+  flex-basis: 300px;
+}
