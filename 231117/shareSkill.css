@@ -1,0 +1,51 @@
+.carousel-item {
+  height: 400px;
+}
+
+.carousel-item > div {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  text-align: center;
+}
+
+.carousel-item > img {
+  width: 70%;
+  height: 70%;
+}
+
+.intro {
+  position: absolute;
+  bottom: 25%;
+  font-weight: 900;
+  color: orange;
+}
+
+.intro h2 {
+  font-size: 32px;
+  color: #fff;
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 18px;
+}
+
+.intro h3 {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 48px;
+}
+
+.intro > a {
+  text-decoration: 0;
+  color: #fff;
+  background-color: #050027;
+  border-radius: 2px;
+  padding: 10px 30px;
+  font-weight: 300;
+}
+
+.container {
+  margin-top: 50px;
+}
